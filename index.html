@@ -9,6 +9,12 @@
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="KGiqwg7ZrAjombyGZYatg-oZl6V_uX5hmSZ1uHfCok4" />
 <link rel="canonical" href="https://min-ship-it12.github.io/seongtan/">
+<link rel="alternate" hreflang="ko" href="https://min-ship-it12.github.io/seongtan/">
+<link rel="alternate" hreflang="en" href="https://min-ship-it12.github.io/seongtan/en/">
+<link rel="alternate" hreflang="x-default" href="https://min-ship-it12.github.io/seongtan/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<script>(function(){try{if(/bot|crawl|spider|slurp|yeti|lighthouse|headless|preview/i.test(navigator.userAgent))return;var s=localStorage.getItem('rain-lang');if(s==='en'||(!s&&!/^ko\b/i.test(navigator.language||'ko')))location.replace('en/'+location.search+location.hash);}catch(e){}})();</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="성탄">
 <meta property="og:title" content="성탄 · 눈 내리는 저녁 광장의 크리스마스트리 도트 홈페이지">
@@ -59,13 +65,19 @@ body.zen .panel *{pointer-events:none}
 @media (max-width:640px){.glass{gap:6px;padding:7px;max-width:100%}.glass>*{flex:none}.lbl{display:none}button{font-size:12px;padding:6px 7px}.brand{max-width:64%;padding:4px 8px 5px}.brand p{white-space:nowrap}.brand h1{font-size:17px}.brand p{font-size:10px}.hint{display:none}}
 @media (min-width:900px) and (min-aspect-ratio:1/1){.panel{left:auto;right:max(20px,env(safe-area-inset-right,0px));justify-content:flex-end}.glass{flex-direction:column;align-items:stretch;gap:10px;width:246px;padding:12px}.grp{flex-direction:column;align-items:flex-start;gap:4px}.hint{max-width:176px;line-height:1.45}}
 @media (prefers-reduced-motion:reduce){.panel,.brand,.toast{transition:none}}
+
+.hrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.langs{pointer-events:auto;display:inline-flex;font-family:"Silkscreen",monospace;font-size:10px;letter-spacing:.08em;line-height:1;box-shadow:0 0 0 1px rgba(0,0,0,.35)}
+.langs a{padding:3px 6px 2px;color:rgba(235,240,238,.75);background:rgba(10,14,16,.55);text-decoration:none;text-shadow:none}
+.langs a:hover,.langs a:focus-visible{color:#fff}
+.langs a[aria-current="true"]{background:rgba(235,240,238,.88);color:#10161a}
 </style>
 </head>
 <body>
 <canvas id="bg" width="27" height="48" aria-hidden="true"></canvas>
 <div class="vig"></div>
 <canvas id="scene" aria-label="눈 내리는 보랏빛 저녁, 옛 건물 사이 광장에 선 큰 크리스마스트리를 그린 도트 장면. 트리 전구가 반짝이고, 사람들이 눈을 맞으며 지나가고, 가끔 마차와 강아지가 지나간다."></canvas>
-<div class="brand"><h1>성탄</h1><p>눈 내리는 저녁 광장의 큰 트리</p><p class="dday" id="dday"></p>
+<div class="brand"><div class="hrow"><h1>성탄</h1><span class="langs" aria-label="Language"><a href="./" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('rain-lang','ko')}catch(e){}" aria-current="true">KO</a><a href="en/" hreflang="en" lang="en" onclick="try{localStorage.setItem('rain-lang','en')}catch(e){}">EN</a></span></div><p>눈 내리는 저녁 광장의 큰 트리</p><p class="dday" id="dday"></p>
   <details><summary>시리즈 ▾</summary><nav aria-label="PIXEL RAIN 시리즈"><a href="https://cheoma-rain.netlify.app/" target="_blank" rel="noopener">1 처마 밑</a><a href="https://mulbineul-rain.netlify.app/" target="_blank" rel="noopener">2 물비늘</a><a href="https://changga-rain.netlify.app/" target="_blank" rel="noopener">3 창가</a><a href="https://yeonip-rain.netlify.app/" target="_blank" rel="noopener">4 연잎</a><a href="https://modakbul-rain.netlify.app/" target="_blank" rel="noopener">5 모닥불</a><a href="https://yuribyeong-rain.netlify.app/" target="_blank" rel="noopener">6 유리병</a><a href="https://deulpan-rain.netlify.app/" target="_blank" rel="noopener">7 들판</a><a href="https://min-ship-it12.github.io/deungdae/" target="_blank" rel="noopener">8 등대</a><a href="https://min-ship-it12.github.io/hoerang/" target="_blank" rel="noopener">9 회랑</a><a href="https://min-ship-it12.github.io/kkotgeuneul/" target="_blank" rel="noopener">10 꽃그늘</a><a href="https://min-ship-it12.github.io/seongtan/" aria-current="page">11 성탄</a></nav></details></div>
 <button class="hide" id="zen" aria-pressed="false">조작 숨기기</button>
 <div class="toast" id="toast" role="status"></div>

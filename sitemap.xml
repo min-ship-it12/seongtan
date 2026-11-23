@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://min-ship-it12.github.io/seongtan/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://min-ship-it12.github.io/seongtan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://min-ship-it12.github.io/seongtan/en/"/>
+  </url>
+  <url>
+    <loc>https://min-ship-it12.github.io/seongtan/en/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://min-ship-it12.github.io/seongtan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://min-ship-it12.github.io/seongtan/en/"/>
   </url>
 </urlset>
